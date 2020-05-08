@@ -17,6 +17,8 @@ namespace LABAA2
       { }
 
       public DbSet<User> Users { get; set; }
+      public DbSet<UselessStudent> Students { get; set; }
+      public DbSet<UselessCourse> Courses { get; set; }
     }
   
 }

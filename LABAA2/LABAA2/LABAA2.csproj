@@ -96,6 +96,8 @@
       <DependentUpon>Registration.cs</DependentUpon>
     </Compile>
     <Compile Include="Repository\AccountsRepository.cs" />
+    <Compile Include="UselessCourse.cs" />
+    <Compile Include="UselessStudent.cs" />
     <Compile Include="User.cs" />
     <Compile Include="Repository\UserRepository.cs" />
     <Compile Include="UserBehaviour.cs" />

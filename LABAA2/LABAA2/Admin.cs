@@ -23,6 +23,10 @@ namespace LABAA2
       return base.isAdmin();
     }
 
+    
+
+
+
     public void blockCard(int id)
     {
       UserRepository.blockCard(id);

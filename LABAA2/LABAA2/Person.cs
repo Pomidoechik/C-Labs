@@ -17,6 +17,22 @@ namespace LABAA2
     public string username { get; set; }
     public string password { get; set; }
 
+    public string[] uselessMass;
+    public string this[int id]
+    {
+      get
+      {
+        return uselessMass[id];
+      }
+      set
+      {
+        uselessMass[id] = value;
+      }
+    }
+
+    
+
+
     public Person(string username, string password, string FirstName, string lastName)
     {
       this.username = username;
@@ -29,5 +45,9 @@ namespace LABAA2
 
     public Person() { }
 
+    public string getInfo()
+    {
+      return firstName + " " + lastName; 
+    }
   }
 }

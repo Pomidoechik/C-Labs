@@ -6,9 +6,21 @@ using System.Threading.Tasks;
 
 namespace LABAA2
 {
-  sealed class User : Person, IUserBehaviour 
+  public sealed class User : Person, IUserBehaviour 
   {
-   
+
+    public new string this[int id]
+    {
+      get
+      {
+        return uselessMass[id];
+      }
+      set
+      {
+        uselessMass[id] = "Rabotiaga" +  value;
+      }
+    }
+
 
     public bool isCardBlocked { get; set; }
     public Account userAccount { get; set; }
